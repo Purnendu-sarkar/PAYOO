@@ -4,11 +4,11 @@ document.getElementById('button-login').addEventListener('click', function(event
     event.preventDefault();
     const phoneNumber = document.getElementById('phone-number').value;
     const pinNumber = document.getElementById('pin-number').value;
-    if(phoneNumber != '01409012843' && pinNumber != '1234' ){
-        alert('Your Number is 01409012843 & Your pin 1234')
+    if(phoneNumber === '01409012843' && pinNumber === '1234' ) {
+        window.location.href = '/home.html';
     }
     else{
-        window.location.href = '/home.html';
+        alert('Your Number is 01409012843 & Your pin 1234')
     }
     console.log(phoneNumber)
 })
